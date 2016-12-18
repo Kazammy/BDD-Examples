@@ -6,7 +6,7 @@
 		<artifactId>BDD-Examples</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>01-cucumber</artifactId>
+	<artifactId>01a-cucumber-junit</artifactId>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
