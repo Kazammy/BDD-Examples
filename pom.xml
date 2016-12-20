@@ -9,12 +9,14 @@
 		<module>01a-cucumber-junit</module>
 		<module>04a-jgiven-junit</module>
 		<module>04b-jgiven-testng</module>
+		<module>03a-concordion-junit</module>
 	</modules>
 	<properties>
 		<junit.version>4.12</junit.version>
 		<testng.version>6.10</testng.version>
 		<cucumber.version>1.2.5</cucumber.version>
 		<jgiven.version>0.13.0</jgiven.version>
+		<concordion.version>2.0.3</concordion.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -64,6 +66,12 @@
 				<groupId>com.tngtech.jgiven</groupId>
 				<artifactId>jgiven-testng</artifactId>
 				<version>${jgiven.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.concordion</groupId>
+				<artifactId>concordion</artifactId>
+				<version>${concordion.version}</version>
 				<scope>test</scope>
 			</dependency>
 		</dependencies>
