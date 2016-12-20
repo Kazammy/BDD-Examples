@@ -26,6 +26,6 @@ Framework    | First version | Language          | JUnit and TestNG integration
 JBehave      | 2008          |                   | 
 Cucumber-jvm | 2012          | plain test + java | JUnit + TestNG (but ...)
 Concordion   | 2008          |                   |  
-JGiven       | 2014          | java only         |
+JGiven       | 2014          | java only         | JUnit + TestNG
 Serenity BDD | 2015          |                   |
 

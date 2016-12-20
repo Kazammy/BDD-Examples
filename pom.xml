@@ -8,6 +8,7 @@
 	<modules>
 		<module>01a-cucumber-junit</module>
 		<module>04a-jgiven-junit</module>
+		<module>04b-jgiven-testng</module>
 	</modules>
 	<properties>
 		<junit.version>4.12</junit.version>
@@ -56,6 +57,12 @@
 			<dependency>
 				<groupId>com.tngtech.jgiven</groupId>
 				<artifactId>jgiven-junit</artifactId>
+				<version>${jgiven.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.tngtech.jgiven</groupId>
+				<artifactId>jgiven-testng</artifactId>
 				<version>${jgiven.version}</version>
 				<scope>test</scope>
 			</dependency>
