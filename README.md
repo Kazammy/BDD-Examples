@@ -23,9 +23,9 @@ Cucumber-jvm works both with JUnit and TestNG. But to configure it with TestNG i
 
 Framework    | First version | Language          | JUnit and TestNG integration
 ------------ | ------------- | ----------------- | ----------------------------
-JBehave      | 2008          |                   | 
 Cucumber-jvm | 2012          | plain test + java | JUnit + TestNG (but ...)
-Concordion   | 2008          |                   |  
+JBehave      | 2008          |                   | 
+Concordion   | 2008          |                   | JUnit only  
 JGiven       | 2014          | java only         | JUnit + TestNG
 Serenity BDD | 2015          |                   |
 

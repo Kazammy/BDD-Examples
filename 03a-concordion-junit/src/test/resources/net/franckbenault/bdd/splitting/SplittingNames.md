@@ -5,6 +5,10 @@ Unfortunately the customer data that we are supplied only contains full names.
 
 The system therefore attempts to break a supplied full name into its constituents by splitting around whitespace.
 
-### [Example](- "basic")
+### [Example - basic](- "basic")
 
 The full name [Jane Smith](- "#name") is [broken](- "#firstLastName = split(#name)") into first name [Jane](- "?=#firstLastName.firstName") and last name [Smith](- "?=#firstLastName.lastName").
+
+### [Example - no last name](- "no last name")
+
+The full name [Sting](- "#name") is [broken](- "#firstLastName = split(#name)") into first name [Sting](- "?=#firstLastName.firstName") and last name is [(null)] (- "?=#firstLastName.lastName").
