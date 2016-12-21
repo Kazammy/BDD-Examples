@@ -20,3 +20,13 @@ The full name [Sir Bob Geldof](- "#name") is [broken](- "#firstLastName = split(
 ### [Example - with long last name](- "with long last name")
 
 The full name [Maria de los Santos](- "#name") is [broken](- "#firstLastName = split(#name)") into first name [Maria](- "?=#firstLastName.firstName") and last name is [de los Santos] (- "?=#firstLastName.lastName").
+
+### [Example - Given when then](- "Given when then")
+
+Given The full name [Jose de la grande Pina](- "#name")
+ 
+When the full name is [broken](- "#firstLastName = split(#name)") 
+
+Then the first name is [Jose](- "?=#firstLastName.firstName") 
+
+and last name is [de la grande Pina] (- "?=#firstLastName.lastName").
