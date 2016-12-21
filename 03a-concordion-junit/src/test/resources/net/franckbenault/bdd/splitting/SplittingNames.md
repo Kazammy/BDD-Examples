@@ -12,3 +12,7 @@ The full name [Jane Smith](- "#name") is [broken](- "#firstLastName = split(#nam
 ### [Example - no last name](- "no last name")
 
 The full name [Sting](- "#name") is [broken](- "#firstLastName = split(#name)") into first name [Sting](- "?=#firstLastName.firstName") and last name is [(null)] (- "?=#firstLastName.lastName").
+
+### [Example - with title](- "with title")
+
+The full name [Sir Bob Geldof](- "#name") is [broken](- "#firstLastName = split(#name)") into first name [Bob](- "?=#firstLastName.firstName") and last name is [Geldof] (- "?=#firstLastName.lastName").
