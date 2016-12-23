@@ -10,6 +10,7 @@
 		<module>04a-jgiven-junit</module>
 		<module>04b-jgiven-testng</module>
 		<module>03a-concordion-junit</module>
+		<module>01b-cucumber-testng</module>
 	</modules>
 	<properties>
 		<junit.version>4.12</junit.version>
