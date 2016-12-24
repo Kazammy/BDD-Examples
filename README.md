@@ -4,11 +4,18 @@ example of BDD (Behavior Driven Development
 ## List of main BDD frameworks in Java World
 I am taking in account only the frameworks based on Java language. 
 
+### list of active frameworks 
+
 * Cucumber-jvm
 * JBehave
 * Concordion
 * JGiven
 * Serenity BDD
+
+### list of dead project
+ 
+ * JDave (2011)
+ * Easyb (2014)
 
 ## Cucumber-jvm
 Cucumber can be consider as the reference framework for BDD.
