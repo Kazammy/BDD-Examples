@@ -9,7 +9,7 @@ public class SplittingNamesFixture {
 	
 	 public FirstLastName split(String fullName) {
 		 FirstLastName res = Splitter.split(fullName);	 
-		 System.out.println(res);
+		 //System.out.println(res);
 		 return res;
 	 }
 

@@ -25,8 +25,8 @@ The full name [Maria de los Santos](- "#name") is [broken](- "#firstLastName = s
 
 Given The full name [Jose de la grande Pina](- "#name")
  
-When the full name is [broken](- "#firstLastName = split(#name)") 
+When this full name is [broken](- "#firstLastName = split(#name)") 
 
 Then the first name is [Jose](- "?=#firstLastName.firstName") 
 
-and last name is [de la grande Pina] (- "?=#firstLastName.lastName").
+And the last name is [de la grande Pina] (- "?=#firstLastName.lastName").
