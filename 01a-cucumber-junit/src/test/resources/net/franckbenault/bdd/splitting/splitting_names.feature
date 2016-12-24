@@ -7,9 +7,21 @@ The system therefore attempts to break a supplied full name into its constituent
 
 Rules:
   - the titles like sir must be ignored 
-
+  
   Scenario: basic
 	Given the full name Jane Smith
 	When this full name is broken 
 	Then the first name is Jane 
 	And the last name is Smith
+
+  Scenario Outline: tabs
+  	Given the full name <fullName>
+	When this full name is broken 
+	Then the first name is <firstName>
+	And the last name is <lastName>
+  	Examples:
+    	| fullName            | firstName | lastName      |
+  	  	| Jane Smith          | Jane      | Smith         |
+    	| Sting               | Sting     | (null)        |
+    	| Sir Bob Geldof      | Bob       | Geldof        |
+    	| Maria de los Santos | Maria     | de los Santos |

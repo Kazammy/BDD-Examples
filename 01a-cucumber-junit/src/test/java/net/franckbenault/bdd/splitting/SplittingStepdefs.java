@@ -28,6 +28,9 @@ public class SplittingStepdefs {
     
     @Then("the last name is (.+)$")
     public void then_last_name_is(String lastName) {
+    	if(lastName.equals("(null)"))
+    		lastName=null;
+    	
     	assertEquals(firstLastName.getLastName(), lastName);
     }
 }
