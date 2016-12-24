@@ -17,7 +17,19 @@ The java version is called Cucumber-jvm.
 
 Cucumber-jvm works both with JUnit and TestNG. But to configure it with TestNG is quite difficult.
 
+The scenario is written in plain text. 
 
+## Concordion
+
+Concordion works well with JUnit. But it does not work with testNG.
+
+With Concordion the scenario is written in HTML or in md files.
+
+## JGiven
+
+JGiven works both with JUnit and TestNG.
+
+With JGiven, the scenario is not written but generated from the java code.
 
 ## Frameworks comparison
 
@@ -25,7 +37,7 @@ Framework    | First version | Language          | JUnit and TestNG integration
 ------------ | ------------- | ----------------- | ----------------------------
 Cucumber-jvm | 2012          | plain test + java | JUnit + TestNG (but ...)
 JBehave      | 2008          |                   | 
-Concordion   | 2008          |                   | JUnit only  
+Concordion   | 2008          | Html or md + java | JUnit only  
 JGiven       | 2014          | java only         | JUnit + TestNG
 Serenity BDD | 2015          |                   |
 
