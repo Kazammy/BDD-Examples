@@ -11,6 +11,12 @@ The system therefore attempts to break a supplied full name into its constituent
 	Then the first name is Jane 
 	And the last name is Smith
 
+  Scenario: no last name
+	Given the full name Sting
+	When this full name is broken 
+	Then the first name is Sting 
+	But the last name is (null)	
+
   Scenario Outline: tabs
   	Given the full name <fullName>
 	When this full name is broken 
