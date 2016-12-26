@@ -5,9 +5,9 @@ Feature: Dates with different date formats
   Scenario: Determine past date
     Given today is 2011-01-20
     When I ask if Jan 19, 2011 is in the past
-	Then the result should be yes
-  
+    Then the result should be yes
+
   Scenario: Determine non past date
     Given today is 2011-01-20
     When I ask if Jan 22, 2011 is in the past
-	Then the result should be no	
+    Then the result should be no
