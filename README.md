@@ -40,11 +40,11 @@ With JGiven, the scenario is not written but generated from the java code.
 
 ## Frameworks comparison
 
-Framework    | First version | Language          | JUnit and TestNG integration
------------- | ------------- | ----------------- | ----------------------------
-Cucumber-jvm | 2012          | plain test + java | JUnit + TestNG (but ...)
-JBehave      | 2008          |                   | 
-Concordion   | 2008          | Html or md + java | JUnit only  
-JGiven       | 2014          | java only         | JUnit + TestNG
-Serenity BDD | 2015          |                   |
+Framework    | First version | Language                            | JUnit and TestNG integration
+------------ | ------------- | ----------------------------------- | ----------------------------
+Cucumber-jvm | 2012          | plain test (Gherkin syntaxe) + java | JUnit + TestNG
+JBehave      | 2008          |                                     | 
+Concordion   | 2008          | Html or md + java                   | JUnit only  
+JGiven       | 2014          | java only                           | JUnit + TestNG
+Serenity BDD | 2015          |                                     |
 
