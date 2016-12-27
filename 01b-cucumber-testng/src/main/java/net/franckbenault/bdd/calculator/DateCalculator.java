@@ -6,7 +6,7 @@ public class DateCalculator {
 	
 	private Date currentDate;
 	
-	DateCalculator(Date date) {
+	public DateCalculator(Date date) {
 		currentDate = date;
 	}
 
