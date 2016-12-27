@@ -6,22 +6,22 @@ Feature: Splitting Names
   The system therefore attempts to break a supplied full name into its constituents by splitting around whitespace.
 
   Scenario: basic
-    Given the full name Jane Smith
+    Given the full name "Jane Smith"
     When this full name is broken
-    Then the first name is Jane
-    And the last name is Smith
+    Then the first name is "Jane"
+    And the last name is "Smith"
 
   Scenario: no last name
-    Given the full name Sting
+    Given the full name "Sting"
     When this full name is broken
-    Then the first name is Sting
-    But the last name is (null)
+    Then the first name is "Sting"
+    But the last name is "(null)"
 
   Scenario Outline: tabs
-    Given the full name <fullName>
+    Given the full name "<fullName>"
     When this full name is broken
-    Then the first name is <firstName>
-    And the last name is <lastName>
+    Then the first name is "<firstName>"
+    And the last name is "<lastName>"
 
     Examples: 
       | fullName            | firstName | lastName      |
