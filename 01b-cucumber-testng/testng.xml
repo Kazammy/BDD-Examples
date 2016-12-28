@@ -5,6 +5,8 @@
 			<classes>
 				<class name="net.franckbenault.bdd.calculator.RunCukesTest">
 				</class>
+				<class name="net.franckbenault.bdd.price.RunCukesTest">
+				</class>
 				<class name="net.franckbenault.bdd.splitting.RunCukesTest"></class>
 			</classes>
 		</test>
