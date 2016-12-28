@@ -27,6 +27,6 @@ Given The full name [Jose de la grande Pina](- "#name")
  
 When this full name is [broken](- "#firstLastName = split(#name)") 
 
-Then the first name is [Jose](- "?=#firstLastName.firstName") 
+Then the first name is [Jose] (- "?=#firstLastName.firstName") 
 
 And the last name is [de la grande Pina] (- "?=#firstLastName.lastName").
