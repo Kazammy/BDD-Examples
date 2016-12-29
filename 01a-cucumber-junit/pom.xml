@@ -6,6 +6,7 @@
 		<artifactId>BDD-Examples</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+
 	<artifactId>01a-cucumber-junit</artifactId>
 	<dependencies>
 		<dependency>
@@ -23,6 +24,14 @@
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+		</dependency>
+		<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>htmlunit-driver</artifactId>
 		</dependency>
 	</dependencies>
 </project>
