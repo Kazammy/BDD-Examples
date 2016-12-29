@@ -22,9 +22,14 @@ Cucumber can be consider as the reference framework for BDD.
 Cucumber is not limited in Java but exists in a lot of language.
 The java version is called Cucumber-jvm.
 
-Cucumber-jvm works both with JUnit and TestNG. But to configure it with TestNG is quite difficult.
+Cucumber-jvm works both with JUnit and TestNG.
+Cucumber-jvm has a plugin Eclipse.
 
-The scenario is written in plain text. 
+The scenario is written in plain text.
+
+## JBehave
+
+JBehave has a plugin Eclipse. 
 
 ## Concordion
 
@@ -40,11 +45,11 @@ With JGiven, the scenario is not written but generated from the java code.
 
 ## Frameworks comparison
 
-Framework    | First version | Language                            | JUnit and TestNG integration
------------- | ------------- | ----------------------------------- | ----------------------------
-Cucumber-jvm | 2012          | plain test (Gherkin syntaxe) + java | JUnit + TestNG
-JBehave      | 2008          |                                     | 
-Concordion   | 2008          | Html or md + java                   | JUnit only  
-JGiven       | 2014          | java only                           | JUnit + TestNG
-Serenity BDD | 2015          |                                     |
+Framework    | First version | Language                            | JUnit and TestNG integration | Eclipse integration
+------------ | ------------- | ----------------------------------- | --------------------------------------------------
+Cucumber-jvm | 2012          | plain test (Gherkin syntaxe) + java | JUnit + TestNG				  | Yes	
+JBehave      | 2008          |                                     |                              | Yes 
+Concordion   | 2008          | Html or md + java                   | JUnit only  				  |
+JGiven       | 2014          | java only                           | JUnit + TestNG				  |
+Serenity BDD | 2015          |                                     |                              |
 
