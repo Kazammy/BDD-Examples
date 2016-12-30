@@ -1,6 +1,9 @@
 package net.franckbenault.bdd.calculator;
 
 
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -22,8 +25,8 @@ public class DateCalculatorTest extends SimpleScenarioTest<TestSteps> {
 	public void determine_past_date_test() throws ParseException {
 	    given().today_is_$("2011-01-20");
 	    when().$_ask_if_$_is_in_the_past("I","Jan 19, 2011");
-		then().the_result_should_be_$(true);
-
+		then().the_result_should_be(true).
+		but().the_result_should_not_be(false);
 	}
 	
 
@@ -31,9 +34,11 @@ public class DateCalculatorTest extends SimpleScenarioTest<TestSteps> {
 	public void determine_non_past_date_test() throws ParseException {
 	    given().today_is_$("2011-01-20");
 	    when().$_ask_if_$_is_in_the_past("I","Jan 22, 2011");
-		then().the_result_should_be_$(false);
+		then().the_result_should_be(false).
+		but().the_result_should_not_be(true);
 
 	}
+
 
 	
 	public static class TestSteps extends Stage<TestSteps> {
@@ -47,14 +52,19 @@ public class DateCalculatorTest extends SimpleScenarioTest<TestSteps> {
 			calculator = new DateCalculator(date);
 		}
 
-		public void the_result_should_be_$(
+		public void the_result_should_not_be(@Format( value = BooleanFormatter.class, args = { "yes", "no" } ) boolean yesNo) {
+			assertFalse(yesNo ==calculator.isDateInThePast(checkedDate));
+			
+		}
+
+		public TestSteps the_result_should_be(
 				@Format( value = BooleanFormatter.class, args = { "yes", "no" } ) boolean yesNo) {
-				
-			calculator.isDateInThePast(checkedDate);
+			assertTrue(yesNo ==calculator.isDateInThePast(checkedDate));
+			return self();
 		}
 
 		public void $_ask_if_$_is_in_the_past(String user, String checkedDateString) throws ParseException {
-			DateFormat format = new SimpleDateFormat("MMM dd, YYYY", Locale.ENGLISH);
+			DateFormat format = new SimpleDateFormat("MMM d, yyyy", Locale.ENGLISH);
 			checkedDate = format.parse(checkedDateString);
 		}
 		
