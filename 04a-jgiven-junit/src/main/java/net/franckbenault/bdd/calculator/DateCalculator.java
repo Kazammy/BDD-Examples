@@ -10,9 +10,8 @@ public class DateCalculator {
 		currentDate = date;
 	}
 
-	public String isDateInThePast(Date date) {
-		// TODO Auto-generated method stub
-		return date.before(currentDate) ? "yes" : "no";
+	public boolean isDateInThePast(Date input) {
+		return input.before(currentDate);
 	}
 
 }
